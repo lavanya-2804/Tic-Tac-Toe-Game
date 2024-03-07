@@ -1,0 +1,43 @@
+/* CSS styles */
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 2px;
+}
+
+.cell.win {
+    background-color: lightgreen;
+}
+
+#current-player {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 2px solid green;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
